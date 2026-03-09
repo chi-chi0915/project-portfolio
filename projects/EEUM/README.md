@@ -8,10 +8,36 @@
 | --- | --- |
 
 ## 팀원 소개
+| Name | Role | Contribution |
+|---|---|---|
+| 박주현 | Team Lead / Embedded / AI | MQTT 토픽 설계, IR 센서 연동 |
+| 편민우 | Embedded | ESP32 제어, IR 송신 |
+| 이유민 | Backend / Infra | API 개발, Docker, Jenkins |
+| 윤경진 | AI / Backend / Android | 음성 파이프라인, NLU, MQTT 연동 |
+| 이채영 | Android / Design | UI 개발 |
+| 이태훈 | Android / Design | Jetpack Compose UI |
 
-| 박주현 | 편민우 | 이유민 | 윤경진 | 이채영 | 이태훈 |
-| --- | --- | --- | --- | --- | --- |
-| **팀장, Embedded, AI** <br> **[PM]** Jira & Notion 일정 관리 및 명세서 최신화 <br> ERD 설계 및 정규화 <br> Mqtt 통신 프로토콜 토픽 설계 <br> 발표 자료 작성 <br> **[Embedded]** IR 수신 센서 & 온습도 센서 연동 <br> CSV Parser 구현 로그 저장 <br> Mqtt Client 구현 및 연결 <br> **[MFC]** Webview2 기반 대시보드, Log/Device/Env Factor 패널 구현 <br> **[AI]** LightGBM 기반 자동 제어, K-Means 기반 환경 가중치 계산 | **Embedded** <br> ESP32 기반 하드웨어 제어 및 GPIO 설정 <br> RMT 모듈을 활용한 IR 송신 <br> UART 통신 및 JSON 파싱 <br> NVS Flash 설정 관리 <br> RAW IR 데이터 송신 <br> FreeRTOS 멀티태스킹 시스템 <br> MQTT Client 구현 및 연결 <br> Wifi 연결 관리 및 재연결 로직 <br> **Database** IR 코드 학습/저장 <br> **Security** MQTT TLS 통신, 시리얼 토큰 인증 | **Backend, Infra** <br> 사용자/홈/평면도/디바이스/허브/루틴 API 개발 <br> 전력 사용량 리포트 API <br> 스케줄러 기반 루틴 실행 <br> **Infra** EC2 서버환경 구축, Docker Compose 서비스 구성 <br> Jenkins CI/CD 파이프라인 구축 및 배포 자동화 <br> Nginx Reverse Proxy + TLS 적용 <br> **DB** ERD 설계 및 PostgreSQL 마이그레이션 관리 | **AI, Backend, Infra** <br> **[AI]** 웨이크워드 → STT 전환 <br> 규칙 기반 NLU (다절 분리/슬롯 매핑) <br> 대화형 루틴 생성 <br> TTS 응답 & 이어콘 UX <br> 상태 질의 처리 로직 <br> **[Backend]** MQTT 제어·로깅 연동 <br> IR 신호 송수신 및 이벤트 로그 적재 <br> 루틴 실행 시 FCM 푸시 발송 <br> **[Android]** Foreground Service 음성 인식 <br> 마이크 단일 점유 처리 <br> 사용자 피드백(TTS + 이어콘) UX <br> FCM 알림 수신 및 딥링크 처리 <br> **Infra/DB** Jenkins CI/CD, PostgreSQL 관리 | **Android, Design** <br> **[Android]** 회원가입 화면 개발 <br> 홈 평면도 기능 개발 <br> 로그 동적 표시 <br> 루틴 CRUD <br> Navigation Bar 화면 연결 <br> Naver Map 연동 <br> 애니메이션 TabRow 구현 <br> @parcelize 데이터 전달 <br> **[Design]** Figma 와이어프레임 <br> 로고 제작 <br> 홈/회원가입/로그/루틴 화면 UI/UX | **Android, Design** <br> **[Android]** Jetpack Compose 개발 <br> Spring API 연결 <br> 디바이스 탭 기능 (QR 인식, 아이콘 위치/색상, 상태 제어) <br> 사용량 탭 기능 (일간/주간/월간/연간 리포트, AI 요약, Vico 차트, YCharts 파이차트) <br> 마이페이지 탭 (사용자 정보) <br> **[Design]** Figma 와이어프레임 <br> 디바이스/사용량/마이페이지 UI/UX |
+## My Contribution
+
+### AI
+- Wakeword → STT 음성 인식 파이프라인 설계
+- 규칙 기반 NLU (다절 분리, 슬롯 매핑)
+- 대화형 루틴 생성
+- TTS 응답 및 이어콘 UX
+
+### Backend
+- MQTT 제어 및 이벤트 로깅 처리
+- IR 신호 송수신 로그 저장
+- 루틴 실행 시 FCM 푸시 알림
+
+### Android
+- Foreground Service 기반 음성 인식
+- 마이크 단일 점유 처리
+- 사용자 피드백 UX (TTS + 이어콘)
+
+### Infra / DB
+- Jenkins CI/CD 구축
+- PostgreSQL 관리
 
 
 ## 기획 의도

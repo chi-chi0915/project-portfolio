@@ -1,16 +1,28 @@
 # SSAFé - 혜택 팡팡 카페 앱
 
-<table>
+<table width="100%">
 <tr>
-<td><img src="image/home.png" width="300"/></td>
-<td><img src="image/menu.png" width="300"/></td>
-<td><img src="image/use_gpt.png" width="300"/></td>
+<td align="center">
+<img src="image/home.png" height="500">
+</td>
+<td align="center">
+<img src="image/menu.png" height="500">
+</td>
+<td align="center">
+<img src="image/use_gpt.png" height="500">
+</td>
 </tr>
 
 <tr>
-<td><img src="image/coupon.png" width="300"/></td>
-<td><img src="image/pay_order.png" width="300"/></td>
-<td><img src="image/grade.png" width="300"/></td>
+<td align="center">
+<img src="image/coupon.png" height="500">
+</td>
+<td align="center">
+<img src="image/pay_order.png" height="500">
+</td>
+<td align="center">
+<img src="image/grade.png" height="500">
+</td>
 </tr>
 </table>
 
